@@ -1,5 +1,146 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Bellefair');
+html, body, #root {
+  height: 100%
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+#prevButton a{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+#root{
+  height: 100vh;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  text-align: center;
+  text-align:center
+}
+#container{
+  background-color: white;
+  padding: 30px;
+  margin: 10% 10% 0 10%;
+  text-align: center;
+  height: auto;
+  font-size: 10px;
+}
+#app{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  font-size: 10px;
+  font-family: 'Lato', sans-serif;
+}
+button{
+  padding: 18px;
+  text-size: 20px;
+  text-align: center;
+  border-radius: 3px;
+  width: 35%;
+  border: none;
+}
+button:hover{
+  cursor: pointer;
+}
+#prevButton{
+  background-color: #03f9f4;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  top: 65px;
+  right: 80px;
+}
+#nextButton{
+  background-color: #ff9a00;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  top: 65px;
+  left: 80px;
+}
+button:active{
+  animation:deep-in 1s infinite;
+  border: none;
+}
+button:focus{
+  outline: 0;
+}
+
+
+@keyframes deep-in{
+  0%{
+    transform: scale(1);
+  }
+  10%{
+    transform: scale(0.9);
+  }
+  20%{
+    transform: scale(0.8);
+  }
+  30%{
+    transform: scale(0.7);
+  }
+  40%{
+    transform: scale(0.6);
+  }
+  50%{
+    transform: scale(0.5);
+  }
+  60%{
+    transform: scale(0.6);
+  }
+  70%{
+    transform: scale(0.7);
+  }
+  80%{
+    transform: scale(0.8);
+  }
+  90%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+#author{
+  position: relative;
+  top: 60px;
+  font-size: 24px;
+  left: 30%;
+  font-family: 'Bellefair', serif;
+}
+#App{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+}
+#footer{
+  font-size: 28px;
+  font-family: "Lato", sans-serif;
+  bottom: 20px;
+  align: center;
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+#footer em:hover{
+  cursor: pointer;
+  animation: make-it-big 1s infinite;
+}
+@keyframes make-it-big{
+  from{
+    border: 0px solid white;
+  }to{
+    border: 8px solid white;
+  }
 }
